@@ -1,0 +1,2 @@
+﻿if not exists (select * from sysobjects where name='GeoLocations' and xtype='U')
+                                                CREATE TABLE [dbo].[GeoLocations](	[GEO_ID] [varchar](100) NULL,	[STATE] [varchar](100) NULL,	[COUNTY] [varchar](100) NULL,	[NAME] [varchar](100) NULL,	[LSAD] [varchar](100) NULL,	[CENSUSAREA] [varchar](100) NULL,	[coordinates] [text] NULL) ON [PRIMARY]

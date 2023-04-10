@@ -1,0 +1,12 @@
+C:\Users\Lione\source\repos\GeoLocations2\GeoLocations.PL.Win.Forms\obj\Debug\GeoLocations.PL.Win.Forms.csproj.AssemblyReference.cache
+C:\Users\Lione\source\repos\GeoLocations2\GeoLocations.PL.Win.Forms\obj\Debug\GeoLocations.PL.Win.Forms.csproj.SuggestedBindingRedirects.cache
+C:\Users\Lione\source\repos\GeoLocations2\GeoLocations.PL.Win.Forms\obj\Debug\GeoLocations.PL.Win.Forms.Properties.Resources.resources
+C:\Users\Lione\source\repos\GeoLocations2\GeoLocations.PL.Win.Forms\obj\Debug\GeoLocations.PL.Win.Forms.csproj.GenerateResource.cache
+C:\Users\Lione\source\repos\GeoLocations2\GeoLocations.PL.Win.Forms\obj\Debug\GeoLocations.PL.Win.Forms.csproj.CoreCompileInputs.cache
+C:\Users\Lione\source\repos\GeoLocations2\GeoLocations.PL.Win.Forms\obj\Debug\GeoLocations.PL.Win.Forms.frmMain.resources
+C:\Users\Lione\source\repos\GeoLocations2\GeoLocations.PL.Win.Forms\bin\Debug\GeoLocations.PL.Win.Forms.exe.config
+C:\Users\Lione\source\repos\GeoLocations2\GeoLocations.PL.Win.Forms\bin\Debug\GeoLocations.PL.Win.Forms.exe
+C:\Users\Lione\source\repos\GeoLocations2\GeoLocations.PL.Win.Forms\bin\Debug\GeoLocations.PL.Win.Forms.pdb
+C:\Users\Lione\source\repos\GeoLocations2\GeoLocations.PL.Win.Forms\obj\Debug\GeoLocations.PL.Win.Forms.exe
+C:\Users\Lione\source\repos\GeoLocations2\GeoLocations.PL.Win.Forms\obj\Debug\GeoLocations.PL.Win.Forms.pdb
+C:\Users\Lione\source\repos\GeoLocations2\GeoLocations.PL.Win.Forms\obj\Debug\GeoLocations.PL.Win.Forms.frmCapitals.resources
