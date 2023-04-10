@@ -8,8 +8,8 @@
     <ProjectGuid>{FE959B4D-D9F7-47F4-8B44-EDF8B2486039}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GeoLocations.UnitTests</RootNamespace>
-    <AssemblyName>GeoLocations.UnitTests</AssemblyName>
+    <RootNamespace>GeoLocations.TL.BL.Net.UnitTests</RootNamespace>
+    <AssemblyName>GeoLocations.TL.BL.Net.UnitTests</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>

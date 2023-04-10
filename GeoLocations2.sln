@@ -5,7 +5,7 @@ VisualStudioVersion = 17.5.33209.295
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoLocations.Net.DataLoader", "GeoLocations\GeoLocations.Net.DataLoader.csproj", "{E29E3346-289A-44BD-A5BC-074BBBE898CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoLocations.UnitTests", "GeoLocations.UnitTests\GeoLocations.UnitTests.csproj", "{FE959B4D-D9F7-47F4-8B44-EDF8B2486039}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoLocations.TL.BL.Net.UnitTests", "GeoLocations.UnitTests\GeoLocations.TL.BL.Net.UnitTests.csproj", "{FE959B4D-D9F7-47F4-8B44-EDF8B2486039}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{137752A5-CB82-49E7-BF24-598DC555BCC5}"
 	ProjectSection(SolutionItems) = preProject

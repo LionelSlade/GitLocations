@@ -1,9 +1,10 @@
 ﻿using GeoLocations.Net.BL.DAO;
+using GeoLocations.Net.BL.Enums;
 using GeoLocations.Net.BL.Utility;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Diagnostics;
 
-namespace GeoLocations.UnitTests
+namespace GeoLocations.TL.BL.Net.UnitTests
 {
     [TestClass]
     public class DAOTests
@@ -29,7 +30,7 @@ namespace GeoLocations.UnitTests
             //geoLocation.coordinates = "1";
             //Assert.AreEqual("1", geoLocation.coordinates);
 
-            var myObjects = new CreateJsonObjects(Net.BL.Enums.enumJsonFileType.GeoLocations);
+            var myObjects = new CreateJsonObjects(enumJsonFileType.GeoLocations);
             GeoLocation.Root root = myObjects.GeoLocationsObject; //.features[0];
             var f1 = root.features[0];
             Assert.IsNotNull(f1);
@@ -59,7 +60,7 @@ namespace GeoLocations.UnitTests
 
             //Assert.AreEqual("Aruba", geoCountryOutline.Name);
             //Assert.AreEqual("ABW", geoCountryOutline.ISOA3);
-            var myObjects = new CreateJsonObjects(Net.BL.Enums.enumJsonFileType.CountryOutline);
+            var myObjects = new CreateJsonObjects(enumJsonFileType.CountryOutline);
             CountryOutline.Root countryOutlineRoot = myObjects.GeoCountryOutlinesObject;
             var f1 = countryOutlineRoot.features[0];
             Assert.IsNotNull(f1);

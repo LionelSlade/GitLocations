@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using GeoLocations.Net.BL.Enums;
 
-namespace GeoLocations.UnitTests
+namespace GeoLocations.TL.BL.Net.UnitTests
 {
     [TestClass]
     public class CreateObjectsT

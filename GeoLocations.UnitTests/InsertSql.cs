@@ -2,7 +2,7 @@
 using GeoLocations.Net.BL.Services;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace GeoLocations.UnitTests
+namespace GeoLocations.TL.BL.Net.UnitTests
 {
     [TestClass]
     public class InsertSql
