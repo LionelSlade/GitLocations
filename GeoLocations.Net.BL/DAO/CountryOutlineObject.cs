@@ -2,18 +2,6 @@
 
 namespace GeoLocations.BL.Net.DAO
 {
-    //public class CountryOutline
-    //{
-    //    internal dynamic coordinates;
-
-    //    public string ADMIN { get; set; }
-    //    public string ISO_A3 { get; set; }
-    //    public class Geometry
-    //    {
-    //        public string type { get; set; }
-    //        public List<List<List<object>>> coordinates { get; set; }
-    //    }
-    //}
     public class CountryOutline
     {
 

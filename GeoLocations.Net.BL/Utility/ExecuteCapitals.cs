@@ -1,11 +1,11 @@
 ﻿using GeoLocations.BL.Net.DAO;
 using GeoLocations.BL.Net.Enums;
+using GeoLocations.BL.Net.Utility;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Data;
-using GeoLocations.BL.Net.Utility;
+using System.Data.SqlClient;
 
 namespace GeoLocations.BL.Net.Services
 {
@@ -39,34 +39,10 @@ namespace GeoLocations.BL.Net.Services
         private bool InsertInDataBaseCapitals(List<Capitals.Root> lstCapitals)
         {
             SqlConnection connection = new SqlConnection(_ConnectionString);
-
             string createTableString = _ct.GetCreateTableString(enumJsonFileType.Capitals);
-
-            //string insertRecordsString = @"INSERT INTO [dbo].[Capitals]
-            //                                ([NAME], TLD)
-            //                                VALUES(@NAME, @TLD)";
-
-            //string insertRecordsString = @"INSERT INTO [dbo].[Capitals]
-            //                                ([NAME], TLD, CCA2, CCN3, CCA3, CIOC, INDEPENDANT, STATUS, UN_MEMBER, CURRENCIES, IDD, CAPITAL, ALT_SPELLINGS, REGION, SUB_REGION, LANGUAGES, TRANSLATIONS, LAT_LONG, LANDLOCKED, BORDERS, AREA, FLAG, DEMONYMS)
-            //                                VALUES(@NAME, @TLD, @CCA2, @CCN3, @CCA3, @CIOC, @INDEPENDANT, @STATUS, @UN_MEMBER, @CURRENCIES, @IDD, @CAPITAL, @ALT_SPELLINGS, @REGION, @SUB_REGION, @LANGUAGES, @TRANSLATIONS, @LAT_LONG, @LANDLOCKED, @BORDERS, @AREA, @FLAG, @DEMONYMS)";
-            //SERIALISZE: NAME, TLD, Currencies, capital, altSpellings, Languages, Translations, LAT_LONG, borders, demonyms
-
-            //string insertRecordsString = @"INSERT INTO [dbo].[Capitals]
-            //                                ([NAME], TLD, CCA2)
-            //                                VALUES(@NAME, @TLD, @CCA2)";
-
-            //string insertRecordsString = @"INSERT INTO [dbo].[Capitals]
-            //                                ([NAME], TLD, CCA2, CCN3, CCA3, CIOC, INDEPENDANT, STATUS, UN_MEMBER, CURRENCIES)
-            //                                VALUES(@NAME, @TLD, @CCA2, @CCN3, @CCA3, @CIOC, @INDEPENDANT, @STATUS, @UN_MEMBER, @CURRENCIES)";
-
-            //string insertRecordsString = @"INSERT INTO [dbo].[Capitals]
-            //([NAME], TLD, CCA2, CCN3, CCA3, CIOC, INDEPENDANT, STATUS, UN_MEMBER, CURRENCIES, IDD, CAPITAL, ALT_SPELLINGS)
-            //                                VALUES(@NAME, @TLD, @CCA2, @CCN3, @CCA3, @CIOC, @INDEPENDANT, @STATUS, @UN_MEMBER, @CURRENCIES, @IDD, @CAPITAL, @ALT_SPELLINGS)";
-
             string insertRecordsString = @"INSERT INTO [dbo].[Capitals]
             ([NAME], TLD, CCA2, CCN3, CCA3, CIOC, INDEPENDANT, STATUS, UN_MEMBER, CURRENCIES, IDD, CAPITAL, ALT_SPELLINGS, REGION, SUB_REGION, LANGUAGES, TRANSLATIONS, LAT_LONG, LANDLOCKED, BORDERS, AREA, FLAG, DEMONYMS)
                                             VALUES(@NAME, @TLD, @CCA2, @CCN3, @CCA3, @CIOC, @INDEPENDANT, @STATUS, @UN_MEMBER, @CURRENCIES, @IDD, @CAPITAL, @ALT_SPELLINGS, @REGION, @SUB_REGION, @LANGUAGES, @TRANSLATIONS, @LAT_LONG, @LANDLOCKED, @BORDERS, @AREA, @FLAG, @DEMONYMS)";
-
 
             try
             {

@@ -1,20 +1,10 @@
-﻿using Newtonsoft.Json;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace GeoLocations.BL.Net.DAO
 {
 
     public class GeoLocation
     {
-        //public string GEO_ID { get; set; }
-        //public string STATE { get; set; }
-        //public string COUNTY { get; set; }
-        //public string NAME { get; set; }
-        //public string LSAD { get; set; }
-        //public string CENSUSAREA { get; set; }
-        //public string coordinates { get; set; }
-
-        // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse);
         public class Feature
         {
             public string type { get; set; }

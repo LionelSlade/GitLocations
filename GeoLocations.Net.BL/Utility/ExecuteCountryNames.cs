@@ -1,6 +1,5 @@
 ﻿using GeoLocations.BL.Net.DAO;
 using GeoLocations.BL.Net.Enums;
-//using static GeoLocations.Net.BL.CountryNames;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -25,63 +24,13 @@ namespace GeoLocations.BL.Net.Utility
             {   
                 lstCountryOutline.Add(item);
             }
-            InsertInDataBaseCountyName2(lstCountryOutline);            
+            InsertInDataBaseCountyName(lstCountryOutline);            
             Errors = _errors;
             if (hasErrors()) { return false; }
             return true;
         }
 
-        private void InsertInDataBaseCountyNames(List<CountryNames> lstCountyNames)
-        {
-            SqlConnection connection = new SqlConnection(_ConnectionString);
-
-            string createTableString = _ct.GetCreateTableString(enumJsonFileType.CountryOutline);
-
-            string insertRecordsString = @"INSERT INTO [dbo].[CountryNames]
-                                            ([ID], [CODE2L], [CODE3L], [CENTER], [ENABLED], [NAME_OFFICAL],[NAME])
-                                            VALUES(@ID, @CODE2L, @CODE3L, @CENTER, @ENABLED, @NAME_OFFICAL, @NAME)"; //, @NAMES)";
-
-            try
-            {
-                connection.Open();
-
-                SqlCommand createTable = new SqlCommand(createTableString, connection);
-
-                try { createTable.ExecuteNonQuery(); }
-                catch (Exception ex) { }
-                finally { createTable.Dispose(); }
-
-                foreach (var item in lstCountyNames)
-                {
-                    SqlCommand insertCommand = new SqlCommand(insertRecordsString, connection);
-
-                    insertCommand.Parameters.Add("@ID ", SqlDbType.NVarChar).Value = item.ID;
-                    insertCommand.Parameters.Add("@CODE2L ", SqlDbType.NVarChar).Value = item.CODE2L;
-                    insertCommand.Parameters.Add("@CODE3L ", SqlDbType.NVarChar).Value = item.CODE3L;
-                    insertCommand.Parameters.Add("@CENTER ", SqlDbType.NVarChar).Value = "";// item.CENTER;
-                    insertCommand.Parameters.Add("@ENABLED ", SqlDbType.NVarChar).Value = item.ENABLED;
-                    insertCommand.Parameters.Add("@NAME_OFFICAL ", SqlDbType.NVarChar).Value = item.NAME_OFFICAL;
-                    insertCommand.Parameters.Add("@NAME ", SqlDbType.NVarChar).Value = item.NAME;
-                    //insertCommand.Parameters.Add("@NAMES ", SqlDbType.NVarChar).Value = item.NAMES;
-
-                    try { insertCommand.ExecuteNonQuery(); }
-                    catch (Exception ex)
-                    {
-                        _errors.Add(ex);
-                    }
-                    finally { insertCommand.Dispose(); }
-                }
-
-            }
-            catch (Exception) { }
-            finally
-            {
-                connection.Close();
-                connection.Dispose();
-            }
-        }
-
-        private void InsertInDataBaseCountyName2(List<CountryName.Root> lstCountyNames){
+        private void InsertInDataBaseCountyName(List<CountryName.Root> lstCountyNames){
             SqlConnection connection = new SqlConnection(_ConnectionString);
 
             string createTableString = _ct.GetCreateTableString(enumJsonFileType.CountryOutline);

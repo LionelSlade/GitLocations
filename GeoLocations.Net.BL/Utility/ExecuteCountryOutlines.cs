@@ -18,79 +18,12 @@ namespace GeoLocations.BL.Net.Utility
             this._connectionString = connectionString;
         }
 
-        //internal bool Execute(dynamic deserialized)
-        //{
-        //    List<CountryOutline> lstCountryOutline = new List<CountryOutline>();
-        //    foreach (var item in deserialized.features)
-        //    {
-        //        lstCountryOutline.Add(new CountryOutline()
-        //        {
-        //            ADMIN = item.properties.ADMIN,
-        //            ISO_A3 = item.properties.ISO_A3,
-        //            coordinates = item.geometry.coordinates.ToString()
-        //        });
-        //    }
-
-        //    InsertInDataBaseCountyOutlines(lstCountryOutline);
-        //    return true;
-        //}
-
-
-
         internal bool Execute(CountryOutline.Root CountryOutlineRoot)
-        {   var result = false;
-
-            //InsertInDataBaseCountyOutlines(deserialized);
+        {   
+            var result = false;
             InsertInDataBaseCountyOutlines(CountryOutlineRoot);
-
             return result;
         }
-
-        //private void InsertInDataBaseCountyOutlines(List<CountryOutline> lstGeoLocation)
-        //{
-        //    SqlConnection connection = new SqlConnection(_connectionString);
-
-        //    string createTableString = _ct.GetCreateTableString((enumJsonFileType.CountryOutline));
-
-        //    string insertRecordsString = @"INSERT INTO [dbo].[CountryOutline]
-        //                                    ([ADMIN], [ISO_A3], [coordinates])
-        //                                    VALUES(@ADMIN, @ISO_A3, @coordinates)";
-
-        //    try
-        //    {
-        //        connection.Open();
-
-        //        SqlCommand createTable = new SqlCommand(createTableString, connection);
-
-        //        try { createTable.ExecuteNonQuery(); }
-        //        catch (Exception ex) { }
-        //        finally { createTable.Dispose(); }
-
-        //        foreach (var item in lstGeoLocation)
-        //        {
-        //            SqlCommand insertCommand = new SqlCommand(insertRecordsString, connection);
-
-        //            insertCommand.Parameters.Add("@ADMIN ", SqlDbType.NVarChar).Value = item.ADMIN;
-        //            insertCommand.Parameters.Add("@ISO_A3 ", SqlDbType.NVarChar).Value = item.ISO_A3;
-        //            insertCommand.Parameters.Add("@coordinates ", SqlDbType.NVarChar).Value = item.coordinates;
-
-        //            try { insertCommand.ExecuteNonQuery(); }
-        //            catch (Exception ex)
-        //            {
-        //                Errors.Add(ex);
-        //            }
-        //            finally { insertCommand.Dispose(); }
-        //        }
-
-        //    }
-        //    catch (Exception) { }
-        //    finally
-        //    {
-        //        connection.Close();
-        //        connection.Dispose();
-        //    }
-
-        //}
 
         private void InsertInDataBaseCountyOutlines(CountryOutline.Root CountryOutlineRoot)
         {

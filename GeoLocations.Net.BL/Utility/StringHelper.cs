@@ -2,8 +2,6 @@
 
 namespace GeoLocations.BL.Net.Utility
 {
-
-
     static class StringHelper
     {
         public static string GetUntilOrEmpty(this string text, string stopAt = "-")

@@ -849,8 +849,6 @@
     <Content Include="SQL\CreateTable.CountryOutline.sql" />
     <Content Include="SQL\CreateTable.GeoLocations.sql" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="GeoLocations\Net\BL\Utility\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -8,8 +8,7 @@
         public string CODE2L { get; set; }
         public string NAME { get; set; }
         public string NAME_OFFICAL { get; set; }        
-        //public Center CENTER { get; set; }
-        //public Center CENTER { get; set; }
+                
         public object NAMES { get; set; }
         public string coordinates { get; set; }
         public string latitude { get; set; }
