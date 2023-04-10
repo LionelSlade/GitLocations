@@ -1,12 +1,10 @@
-﻿using GeoLocations.Net.BL.DAO;
-using GeoLocations.Net.BL.Enums;
+﻿using GeoLocations.BL.Net.DAO;
+using GeoLocations.BL.Net.Enums;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace GeoLocations.Net.BL.Utility
+namespace GeoLocations.BL.Net.Utility
 {
     internal class ExecuteGeoLocations
     {

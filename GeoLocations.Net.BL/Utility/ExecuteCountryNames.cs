@@ -1,13 +1,13 @@
-﻿using GeoLocations.Net.BL.DAO;
-using GeoLocations.Net.BL.Enums;
-using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Data;
+﻿using GeoLocations.BL.Net.DAO;
+using GeoLocations.BL.Net.Enums;
 //using static GeoLocations.Net.BL.CountryNames;
 using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 
-namespace GeoLocations.Net.BL.Utility
+namespace GeoLocations.BL.Net.Utility
 {
     internal class ExecuteCountryNames
     {

@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
-using static GeoLocations.Net.BL.DAO.Capitals;
 
 
 /// comments added
-namespace GeoLocations.Net.BL.DAO //GeoLocations.DAO
+namespace GeoLocations.BL.Net.DAO //GeoLocations.DAO
 {
     public class Capitals
     {

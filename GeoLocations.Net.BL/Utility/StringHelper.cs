@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GeoLocations.Net.BL.Utility
+namespace GeoLocations.BL.Net.Utility
 {
 
 

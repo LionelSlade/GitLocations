@@ -1,11 +1,11 @@
-﻿using GeoLocations.Net.BL.DAO;
-using GeoLocations.Net.BL.Enums;
-using GeoLocations.Net.BL.Services;
+﻿using GeoLocations.BL.Net.DAO;
+using GeoLocations.BL.Net.Enums;
+using GeoLocations.BL.Net.Services;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 
-namespace GeoLocations.Net.BL.Utility
+namespace GeoLocations.BL.Net.Utility
 {
     public class CreateJsonObjects
     {
@@ -88,7 +88,7 @@ namespace GeoLocations.Net.BL.Utility
         internal bool SetCountryOutline(string content)
         {
             CountryOutline.Root CountryOutlineRoot = JsonConvert.DeserializeObject<CountryOutline.Root>(content);
-            var executeCountryOutline = new Utility.ExecuteCountryOutlines(_ConnectionString);
+            var executeCountryOutline = new ExecuteCountryOutlines(_ConnectionString);
             var result = executeCountryOutline.Execute(CountryOutlineRoot);
             GeoCountryOutlinesObject = CountryOutlineRoot;
             return result;

@@ -97,9 +97,9 @@
     <Content Include="Resources\MultiFlags.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GeoLocations.Net.BL\GeoLocations.Net.BL.csproj">
+    <ProjectReference Include="..\GeoLocations.Net.BL\GeoLocations.BL.Net.csproj">
       <Project>{FDA1FE82-3AB0-4919-9B91-B22BD9454A75}</Project>
-      <Name>GeoLocations.Net.BL</Name>
+      <Name>GeoLocations.BL.Net</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

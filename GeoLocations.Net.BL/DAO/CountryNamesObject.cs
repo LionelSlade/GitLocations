@@ -1,4 +1,4 @@
-﻿namespace GeoLocations.Net.BL.DAO
+﻿namespace GeoLocations.BL.Net.DAO
 {
     public class CountryNames
     {

@@ -1,12 +1,12 @@
-﻿using GeoLocations.Net.BL.DAO;
-using GeoLocations.Net.BL.Enums;
-using GeoLocations.Net.BL.Utility;
+﻿using GeoLocations.BL.Net.DAO;
+using GeoLocations.BL.Net.Enums;
+using GeoLocations.BL.Net.Utility;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace GeoLocations.Net.BL.Services
+namespace GeoLocations.BL.Net.Services
 {
     public class InsertJsonToSql
     {

@@ -1,5 +1,5 @@
 ﻿//https://github.com/mledoze/countries 
-namespace GeoLocations.Net.BL.DAO
+namespace GeoLocations.BL.Net.DAO
 {
     internal class countriesExp
     {

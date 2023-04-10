@@ -1,4 +1,4 @@
-﻿namespace GeoLocations.Net.BL.Enums //GeoLocations.Enums
+﻿namespace GeoLocations.BL.Net.Enums //GeoLocations.Enums
 {
     public enum enumJsonFileType: ushort
     {

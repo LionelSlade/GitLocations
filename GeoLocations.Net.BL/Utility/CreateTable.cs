@@ -1,9 +1,9 @@
-﻿using GeoLocations.Net.BL.Enums;
+﻿using GeoLocations.BL.Net.Enums;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 
-namespace GeoLocations.Net.BL.Utility
+namespace GeoLocations.BL.Net.Utility
 {
     internal class CreateTable
     {

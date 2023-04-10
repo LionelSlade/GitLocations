@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 
-namespace GeoLocations.Net.BL.DAO
+namespace GeoLocations.BL.Net.DAO
 {
 
     public class GeoLocation

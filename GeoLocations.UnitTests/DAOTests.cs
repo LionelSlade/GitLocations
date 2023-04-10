@@ -1,6 +1,10 @@
-﻿using GeoLocations.Net.BL.DAO;
-using GeoLocations.Net.BL.Enums;
-using GeoLocations.Net.BL.Utility;
+﻿//using GeoLocations.BL.Net.DAO;
+//using GeoLocations.Net.BL.Enums;
+//using GeoLocations.Net.BL.Utility;
+using GeoLocations.BL.Net.DAO;
+using GeoLocations.BL.Net.Enums;
+using GeoLocations.BL.Net.Utility;
+//using GeoLocations.Net.BL.Utility;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Diagnostics;
 

@@ -1,13 +1,13 @@
-﻿using GeoLocations.Net.BL.DAO;
-using GeoLocations.Net.BL.Enums;
+﻿using GeoLocations.BL.Net.DAO;
+using GeoLocations.BL.Net.Enums;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Data;
-using GeoLocations.Net.BL.Utility;
+using GeoLocations.BL.Net.Utility;
 
-namespace GeoLocations.Net.BL.Services
+namespace GeoLocations.BL.Net.Services
 {
     internal class ExecuteCapitals
     {

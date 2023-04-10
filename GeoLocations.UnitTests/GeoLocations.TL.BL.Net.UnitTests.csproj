@@ -61,9 +61,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GeoLocations.Net.BL\GeoLocations.Net.BL.csproj">
+    <ProjectReference Include="..\GeoLocations.Net.BL\GeoLocations.BL.Net.csproj">
       <Project>{fda1fe82-3ab0-4919-9b91-b22bd9454a75}</Project>
-      <Name>GeoLocations.Net.BL</Name>
+      <Name>GeoLocations.BL.Net</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

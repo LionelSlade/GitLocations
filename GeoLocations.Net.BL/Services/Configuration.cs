@@ -1,10 +1,10 @@
-﻿using GeoLocations.Net.BL.Enums;
+﻿using GeoLocations.BL.Net.Enums;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace GeoLocations.Net.BL.Services
+namespace GeoLocations.BL.Net.Services
 {
     public class Configuration
     {

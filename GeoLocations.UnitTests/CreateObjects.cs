@@ -1,6 +1,6 @@
-﻿using GeoLocations.Net.BL.Utility;
+﻿using GeoLocations.BL.Net.Enums;
+using GeoLocations.BL.Net.Utility;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using GeoLocations.Net.BL.Enums;
 
 namespace GeoLocations.TL.BL.Net.UnitTests
 {
